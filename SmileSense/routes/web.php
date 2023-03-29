@@ -20,7 +20,3 @@ Route::get('/', function () {
 Route::get('/login/paciente', function () {
     return view('loginpac');
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
